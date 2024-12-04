@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_ma_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã nhân viên" />
+
+    <EditText
+        android:id="@+id/et_ten_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên nhân viên"
+        android:layout_below="@id/et_ma_nv"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_chuc_vu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập chức vụ"
+        android:layout_below="@id/et_ten_nv"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_gioi_tinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập giới tính"
+        android:layout_below="@id/et_chuc_vu"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_dia_chi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa chỉ"
+        android:layout_below="@id/et_gioi_tinh"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_below="@id/et_dia_chi"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_view_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem danh sách"
+        android:layout_below="@id/et_dia_chi"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btn_save"
+        android:layout_marginStart="16dp" />
+</RelativeLayout>
